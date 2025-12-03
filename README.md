@@ -1,6 +1,6 @@
 # Portfolio Template 2025
 
-🚀 **Live Demo**: [Coming Soon]
+🚀 **Live Demo**: https://valeria45x.github.io/portfolio-template-2025/
 
 ## 📋 Project Description
 
@@ -90,21 +90,12 @@ MIT License - See LICENSE file for details
 
 ## 👤 Author
 
-[Valeria Cabrera]
+Valeria Cabrera
 - GitHub: [@Valeria45x](https://github.com/Valeria45x)
 
 ## 🙏 Acknowledgments
 
 Created as part of Web Atelier (UDIT) course project.
-```
-
-Guarda
-
-### 3.4 Crear `LICENSE`
-
-1. New File
-2. Nombre: `LICENSE`
-3. Contenido:
 ```
 MIT License
 
