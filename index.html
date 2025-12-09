@@ -16,7 +16,7 @@
     
     <title>Portfolio Template 2025</title>
     
-    <!-- Tailwind CSS via CDN (¡SIN INSTALAR!) -->
+    <!-- Tailwind CSS via CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     
     <!-- Tailwind Config personalizado -->
@@ -34,10 +34,10 @@
         }
     </script>
     
-    <!--  CSS  -->
-    <link rel="stylesheet" href="assets\css\style.css">
-     <link rel="stylesheet" href="assets\css\tokens.css">
-     <link rel="stylesheet" href="assets\css\animations.css">
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="assets/css/tokens.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body class="font-sans antialiased">
     
@@ -72,8 +72,8 @@
         <!-- Hero Section -->
         <section id="hero" class="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-500 to-purple-600 text-white">
             <div class="text-center px-4">
-                <h1 class="text-5xl md:text-7xl font-bold mb-4">Welcome to My Portfolio</h1>
-                <p class="text-xl md:text-2xl mb-8">Building beautiful web experiences</p>
+                <h1 class="text-5xl md:text-7xl font-bold mb-4 fade-in-down">Welcome to My Portfolio</h1>
+                <p class="text-xl md:text-2xl mb-8 fade-in-up">Building beautiful web experiences</p>
                 <a href="#projects" class="inline-block px-8 py-4 bg-white text-blue-600 rounded-lg font-semibold hover:bg-gray-100 transition transform hover:scale-105">
                     View My Work
                 </a>
@@ -89,16 +89,16 @@
                         Placeholder content for about section.
                     </p>
                     <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-8">
-                        <div class="bg-gray-100 p-4 rounded-lg">
+                        <div class="bg-gray-100 p-4 rounded-lg hover-scale-sm">
                             <p class="font-semibold">HTML5</p>
                         </div>
-                        <div class="bg-gray-100 p-4 rounded-lg">
+                        <div class="bg-gray-100 p-4 rounded-lg hover-scale-sm">
                             <p class="font-semibold">CSS3</p>
                         </div>
-                        <div class="bg-gray-100 p-4 rounded-lg">
+                        <div class="bg-gray-100 p-4 rounded-lg hover-scale-sm">
                             <p class="font-semibold">JavaScript</p>
                         </div>
-                        <div class="bg-gray-100 p-4 rounded-lg">
+                        <div class="bg-gray-100 p-4 rounded-lg hover-scale-sm">
                             <p class="font-semibold">Tailwind</p>
                         </div>
                     </div>
@@ -112,7 +112,7 @@
                 <h2 class="text-4xl font-bold text-center mb-12 text-gray-800">Projects</h2>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     <!-- Project Card -->
-                    <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition transform hover:-translate-y-2">
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden hover-lift">
                         <div class="h-48 bg-gradient-to-r from-blue-400 to-purple-500"></div>
                         <div class="p-6">
                             <h3 class="text-2xl font-bold mb-2">Project 1</h3>
@@ -132,7 +132,7 @@
         <section id="contact" class="py-20 bg-white">
             <div class="container mx-auto px-4 text-center">
                 <h2 class="text-4xl font-bold mb-8 text-gray-800">Get In Touch</h2>
-                <a href="mailto:your@email.com" class="inline-block px-8 py-4 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition">
+                <a href="mailto:your@email.com" class="inline-block px-8 py-4 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition hover-scale">
                     Contact Me
                 </a>
             </div>
@@ -143,17 +143,15 @@
     <footer class="bg-gray-900 text-white py-8">
         <div class="container mx-auto px-4 text-center">
             <p>&copy; 2025 Portfolio Template. All rights reserved.</p>
-            <a href="https://github.com/yourusername/portfolio-template-2025" class="text-blue-400 hover:underline">
+            <a href="https://github.com/Valeria45x/portfolio-template-2025" class="text-blue-400 hover:underline">
                 View on GitHub
             </a>
         </div>
     </footer>
 
     <!-- JavaScript -->
-    <script src="./assets/js/main.js"></script>
-        <script src="assets\js\theme.js"></script>
-                <script src="assets\js\animations.js"></script>
-
-
+    <script src="assets/js/theme.js"></script>
+    <script src="assets/js/animations.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
 </html>

@@ -20,7 +20,7 @@ Building upon Sprint 1's foundation, Sprint 2 focuses on:
 ## Key Features to Implement
 
 ### 1. **Design Tokens System** (CSS Custom Properties)
-Following your professor's approach, create a comprehensive token system for:
+Following the professor's approach, create a comprehensive token system for:
 - Colors (with dark mode support)
 - Spacing scale
 - Typography scale
@@ -67,37 +67,6 @@ Create a comprehensive CSS custom properties system
 - Modify: `assets/css/style.css` (import tokens)
 - Modify: `index.html` (add new CSS files)
 
-#### Design tokens to implement:
-```css
-:root {
-  /* Colors - Primary Palette */
-  --color-primary-50: #eff6ff;
-  --color-primary-500: #3b82f6;
-  --color-primary-900: #1e3a8a;
-  
-  /* Spacing Scale */
-  --space-xs: 0.25rem;
-  --space-sm: 0.5rem;
-  --space-md: 1rem;
-  --space-lg: 2rem;
-  --space-xl: 4rem;
-  
-  /* Typography Scale */
-  --font-size-xs: clamp(0.75rem, 2vw, 0.875rem);
-  --font-size-base: clamp(1rem, 2.5vw, 1.125rem);
-  --font-size-xl: clamp(1.5rem, 5vw, 2rem);
-  
-  /* Shadows */
-  --shadow-sm: 0 1px 2px rgba(0,0,0,0.05);
-  --shadow-md: 0 4px 6px rgba(0,0,0,0.1);
-  --shadow-lg: 0 10px 15px rgba(0,0,0,0.1);
-  
-  /* Transitions */
-  --transition-fast: 150ms ease;
-  --transition-base: 300ms ease;
-  --transition-slow: 500ms ease;
-}
-```
 
 ---
 
@@ -117,24 +86,8 @@ Create smooth scroll-triggered animations using Intersection Observer
 - **Scale up**
 - **Stagger children** (for grids)
 
-#### Implementation approach:
-```javascript
-// Intersection Observer for scroll animations
-const observerOptions = {
-  threshold: 0.1,
-  rootMargin: '0px 0px -50px 0px'
-};
 
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('animate-in');
-    }
-  });
-}, observerOptions);
-```
 
----
 
 ### **Task 3: Create Skills Section** (30 min)
 
@@ -168,20 +121,7 @@ Add dark mode with toggle button and localStorage persistence
 - Saves preference to localStorage
 - Respects `prefers-color-scheme`
 
-#### CSS approach:
-```css
-:root {
-  --bg-primary: #ffffff;
-  --text-primary: #1f2937;
-}
 
-[data-theme="dark"] {
-  --bg-primary: #1f2937;
-  --text-primary: #f9fafb;
-}
-```
-
----
 
 ### **Task 5: Enhanced Project Cards** (40 min)
 
@@ -218,16 +158,7 @@ Floating button that appears on scroll
 #### What we'll do:
 Add subtle parallax scrolling to hero section
 
-#### Implementation:
-```javascript
-window.addEventListener('scroll', () => {
-  const scrolled = window.pageYOffset;
-  const parallax = document.querySelector('.hero-content');
-  parallax.style.transform = `translateY(${scrolled * 0.5}px)`;
-});
-```
 
----
 
 ### **Task 8: Create Experience/Timeline Section** (30 min)
 
@@ -307,20 +238,8 @@ portfolio-template-2025/
 
 ---
 
-## Testing Checklist
 
-Before completing Sprint 2:
-- [ ] Test on Chrome, Firefox, Safari
-- [ ] Test on mobile devices (real device, not just DevTools)
-- [ ] Verify all animations are smooth (60fps)
-- [ ] Check dark mode in all sections
-- [ ] Verify reduced motion preferences work
-- [ ] Test keyboard navigation
-- [ ] Validate HTML and CSS
-- [ ] Check console for errors
-- [ ] Test deployment on GitHub Pages
 
----
 
 ## Resources & References
 

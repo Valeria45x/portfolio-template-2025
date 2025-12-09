@@ -53,7 +53,7 @@ Professor feedback: Build tools (Vite, Webpack) are fullstack content, not neede
 - Deploy to GitHub Pages
 - Add more content sections
 - Implement animations
-- Add project cards with real content
+
 
 ---
 

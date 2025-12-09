@@ -8,36 +8,22 @@ if (mobileMenuBtn && mobileMenu) {
     });
 }
 
-// Smooth scroll
+// Smooth scroll for navigation links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
         const target = document.querySelector(this.getAttribute('href'));
         if (target) {
             target.scrollIntoView({
-                behavior: 'smooth'
+                behavior: 'smooth',
+                block: 'start'
             });
+            // Close mobile menu if open
             if (mobileMenu) {
                 mobileMenu.classList.add('hidden');
             }
         }
     });
 });
-```
 
----
-
-## Estructura Final (Sin Vite):
-```
-portfolio-template-2025/
-├── assets/
-│   ├── css/
-│   │   └── style.css
-│   ├── js/
-│   │   └── main.js
-│   └── images/
-├── public/
-│   └── vite.svg (puedes borrar esto)
-├── docs/
-├── index.html
-└── .gitignore
+console.log('Main.js loaded successfully');

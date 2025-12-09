@@ -1,6 +1,7 @@
-/* Custom CSS */
+/* Custom CSS for Portfolio Template */
 
 :root {
+    /* Fluid typography using clamp() */
     --text-base: clamp(1rem, 2.5vw, 1.125rem);
     --text-lg: clamp(1.125rem, 3vw, 1.25rem);
     --text-xl: clamp(1.25rem, 4vw, 1.5rem);
@@ -8,10 +9,24 @@
     --text-3xl: clamp(2rem, 6vw, 3rem);
 }
 
+/* Smooth scrolling */
 html {
     scroll-behavior: smooth;
 }
 
+/* Ensure body has proper background */
+body {
+    background-color: #ffffff;
+    min-height: 100vh;
+}
+
+/* Ensure sections are visible */
+section {
+    position: relative;
+    z-index: 1;
+}
+
+/* Custom animations */
 @keyframes fade-in {
     from {
         opacity: 0;
@@ -23,13 +38,22 @@ html {
     }
 }
 
+.animate-fade-in {
+    animation: fade-in 1s ease-out;
+}
+
 /* Reduced motion support */
 @media (prefers-reduced-motion: reduce) {
     html {
         scroll-behavior: auto;
     }
+    
+    .animate-fade-in {
+        animation: none;
+    }
+    
     * {
-        animation: none !important;
         transition: none !important;
+        animation: none !important;
     }
 }
