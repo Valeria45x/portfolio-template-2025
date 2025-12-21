@@ -27,4 +27,33 @@ document.addEventListener('DOMContentLoaded', function() {
 
     console.log('Animations.js loaded - observing', animatedElements.length, 'elements');
 });
-```
+// Skill bars animation
+function animateSkillBars() {
+    const skillBars = document.querySelectorAll('.skill-bar');
+    
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const bar = entry.target;
+                const targetWidth = bar.getAttribute('data-width');
+                
+                // Animate to target width
+                setTimeout(() => {
+                    bar.style.transition = 'width 1.5s ease-out';
+                    bar.style.width = targetWidth;
+                }, 100);
+                
+                observer.unobserve(bar);
+            }
+        });
+    }, { threshold: 0.5 });
+    
+    skillBars.forEach(bar => observer.observe(bar));
+}
+
+// Initialize skill bars animation when DOM is ready
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', animateSkillBars);
+} else {
+    animateSkillBars();
+}

@@ -78,6 +78,27 @@ tailwind.config = {
 - Add your projects to the Projects section
 - Update contact information
 
+### Skills Section
+
+1. **Change category names and icons:**
+   - Edit `Category 1` and `Category 2` to your skill categories
+   - Change emojis: 💻 🎨 🚀 ⚡ 🔧 📱 etc.
+
+2. **Update skill names:**
+   - Replace `Skill 1`, `Skill 2`, etc. with your actual skills
+
+3. **Adjust skill levels:**
+   - Modify the percentages (e.g., `90%`, `85%`)
+   - Update `data-width="90%"` to match
+
+4. **Add/remove skills:**
+   - Copy a skill block and paste to add more
+   - Delete a skill block to remove
+
+5. **Change bar color:**
+   - Current: `bg-blue-500`
+   - Options: `bg-purple-500`, `bg-green-500`, `bg-indigo-500`, etc.
+
 ## 🤖 AI Assistant Usage
 
 This project was developed with AI assistance following a two-phase approach:
